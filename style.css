@@ -51,7 +51,7 @@ nav a:hover {
 /* 左栏：头像 + scholar 链接 */
 .intro-left {
   text-align: center;
-  flex: 0 0 200px;            /* 左栏固定宽度 */
+  flex: 0 0 300px;            /* 左栏固定宽度 */
 }
 
 .avatar {
@@ -192,6 +192,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
