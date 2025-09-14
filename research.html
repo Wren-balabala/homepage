@@ -47,10 +47,10 @@
         const abstractDiv = button.parentElement.nextElementSibling;
         if (abstractDiv.style.display === 'block') {
           abstractDiv.style.display = 'none';
-          button.textContent = 'Show Abstract';
+          button.textContent = '▶ Show Abstract';  // 收起时显示 ▶
         } else {
           abstractDiv.style.display = 'block';
-          button.textContent = 'Hide Abstract';
+          button.textContent = '▼ Hide Abstract';  // 展开时显示 ▼
         }
       });
     });
@@ -58,6 +58,7 @@
 
 </body>
 </html>
+
 
 
 
