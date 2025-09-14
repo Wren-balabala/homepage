@@ -13,14 +13,8 @@ nav {
   background: #3498db; /* 淡蓝色主题 */
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* 导航整体靠右 */
   align-items: center;
-}
-
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
 }
 
 nav ul {
@@ -115,7 +109,7 @@ footer {
 
   nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end; /* 小屏幕时仍保持靠右 */
   }
 
   nav ul {
