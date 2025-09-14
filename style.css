@@ -52,30 +52,38 @@ nav a:hover {
 /* 左栏：头像 + scholar 链接 */
 .intro-left {
   text-align: center;
+  flex: 0 0 200px;            /* 左栏固定宽度 */
 }
 
 .avatar {
-  width: 150px;       /* 固定宽度 */
-  height: auto;       /* 自动适应高度，保持原图长宽比 */
-  max-height: 200px;  /* 可选，避免过高 */
-  border-radius: 0;   /* 保持矩形 */
-  object-fit: cover;  /* 保证图片填充盒子，但不拉伸 */
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;         /* 圆形头像 */
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* 阴影更立体 */
+  margin-bottom: 1rem;
 }
 
-
 .intro-left a {
+  display: inline-block;
+  margin-top: 0.5rem;
   color: #3498db;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.2s ease;
 }
 
 .intro-left a:hover {
+  color: #1d6fa5;
   text-decoration: underline;
 }
 
 /* 右栏：文字部分 */
 .intro-right {
   flex: 1;
+  line-height: 1.6;           /* 行距更舒适 */
+  font-size: 1rem;            /* 稍微大点字体 */
+  color: #333;
 }
 
 /* 主体内容 */
@@ -151,9 +159,20 @@ footer {
 }
 
 
-/* 响应式优化：小屏幕下改为上下布局 */
+/* 响应式：小屏幕改为上下布局 */
 @media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
   .intro-left {
-    margin-bottom: 1rem;
+    flex: unset;
+  }
+
+  .intro-right {
+    margin-top: 1rem;
   }
 }
+
