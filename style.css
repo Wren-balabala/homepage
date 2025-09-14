@@ -120,13 +120,14 @@ footer {
 }
 
 .paper-image img {
-  max-width: 250px;        /* 限制宽度 */
-  border-radius: 8px;      /* 圆角 */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* 阴影 */
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
+/* 文字区域 */
 .paper-text {
-  flex: 1;  /* 占据剩余宽度 */
+  flex: 1;
 }
 
 /* 摘要折叠 */
@@ -178,5 +179,6 @@ footer {
     margin-top: 1rem;
   }
 }
+
 
 
