@@ -48,7 +48,6 @@ nav a:hover {
   padding: 1rem;
 }
 
-
 /* 左栏：头像 + scholar 链接 */
 .intro-left {
   text-align: center;
@@ -56,12 +55,13 @@ nav a:hover {
 }
 
 .avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;         /* 圆形头像 */
-  object-fit: cover;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* 阴影更立体 */
+  width: 160px;              /* 宽度 */
+  height: 220px;             /* 高度，可以按需要调整比例 */
+  border-radius: 8px;        /* 轻微圆角，保持美观 */
+  object-fit: cover;         /* 填满容器，不会变形 */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
   margin-bottom: 1rem;
+  display: block;            /* 避免 inline 元素多余空隙 */
 }
 
 .intro-left a {
@@ -185,6 +185,7 @@ footer {
     margin-top: 1rem;
   }
 }
+
 
 
 
