@@ -40,7 +40,7 @@ nav a:hover {
 /* 首页 intro：两栏布局 */
 .intro {
   display: flex;
-  align-items: center;
+  align-items: flex-start;  /* 顶部对齐 */
   justify-content: center;
   gap: 2rem;
   max-width: 900px;
@@ -48,16 +48,20 @@ nav a:hover {
   padding: 1rem;
 }
 
+
 /* 左栏：头像 + scholar 链接 */
 .intro-left {
   text-align: center;
 }
 
 .avatar {
-  width: 150px;       /* 可调整大小 */
-  height: auto;       /* 保持原始纵横比 */
+  width: 150px;       /* 固定宽度 */
+  height: auto;       /* 自动适应高度，保持原图长宽比 */
+  max-height: 200px;  /* 可选，避免过高 */
   border-radius: 0;   /* 保持矩形 */
+  object-fit: cover;  /* 保证图片填充盒子，但不拉伸 */
 }
+
 
 .intro-left a {
   color: #3498db;
@@ -96,26 +100,12 @@ footer {
 
 /* 响应式优化：小屏幕下改为上下布局 */
 @media (max-width: 768px) {
-  .intro {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .intro-right {
-    margin-top: 1rem;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-end; /* 小屏幕时仍保持靠右 */
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+  .intro-left {
+    margin-bottom: 1rem;
   }
 }
+
+
 
 
 
