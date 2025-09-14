@@ -100,9 +100,22 @@ footer {
 
 /* 每篇论文容器 */
 .paper {
-  margin-bottom: 1.5rem;      /* 论文之间的间距 */
-  border-bottom: 1px solid #ddd; /* 底部分隔线 */
+  display: flex;          /* 添加弹性布局 */
+  gap: 20px;              /* 图片与文字间距 */
+  align-items: flex-start; /* 顶部对齐 */
+  margin-bottom: 1.5rem;  
+  border-bottom: 1px solid #ddd;
   padding-bottom: 1rem;
+}
+
+.paper-image img {
+  max-width: 250px;        /* 限制宽度 */
+  border-radius: 8px;      /* 圆角 */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* 阴影 */
+}
+
+.paper-text {
+  flex: 1;  /* 占据剩余宽度 */
 }
 
 /* 摘要折叠 */
@@ -144,11 +157,3 @@ footer {
     margin-bottom: 1rem;
   }
 }
-
-
-
-
-
-
-
-
