@@ -5,12 +5,22 @@ body {
   padding: 0;
   background: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 /* 导航栏 */
 nav {
-  background: #4CAF50;
-  padding: 1rem;
+  background: #3498db; /* 淡蓝色 */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
 }
 
 nav ul {
@@ -24,10 +34,13 @@ nav ul {
 nav a {
   color: white;
   text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* 页面内容 */
@@ -38,13 +51,28 @@ main {
 }
 
 h1, h2 {
-  color: #4CAF50;
+  color: #3498db; /* 标题也用淡蓝色 */
 }
 
 /* 页脚 */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #eee;
+  background: #f1f1f1;
+  color: #555;
   margin-top: 2rem;
+}
+
+/* 响应式优化：小屏幕导航改纵向 */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
 }
