@@ -37,54 +37,61 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* 首页 intro：两栏布局 */
+/* =========================
+   首页 intro：两栏布局
+   ========================= */
 .intro {
-  display: flex;
-  align-items: flex-start;  /* 顶部对齐 */
-  justify-content: center;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
+  display: flex;                     /* 使用 flex 布局实现左右两栏 */
+  align-items: flex-start;           /* 顶部对齐，保证左栏和右栏顶部对齐 */
+  justify-content: center;           /* 水平居中整个 intro 区域 */
+  gap: 2rem;                         /* 左右两栏之间间距 */
+  max-width: 900px;                  /* 限制整个区域最大宽度 */
+  margin: 2rem auto;                 /* 上下外边距 2rem，水平居中 */
+  padding: 1rem;                     /* 内边距 1rem，内容不贴边 */
 }
 
-/* 左栏：头像 + scholar 链接 */
+/* =========================
+   左栏：头像 + Scholar 链接
+   ========================= */
 .intro-left {
-  text-align: center;
-  flex: 0 0 300px;            /* 左栏固定宽度 */
+  text-align: center;                /* 左栏内容居中 */
+  flex: 0 0 300px;                   /* 左栏固定宽度 300px，不随右栏扩展缩放 */
 }
 
 .avatar {
-  width: 160px;              /* 宽度 */
-  height: 220px;             /* 高度，可以按需要调整比例 */
-  border-radius: 8px;        /* 轻微圆角，保持美观 */
-  object-fit: cover;         /* 填满容器，不会变形 */
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-  margin-bottom: 1rem;
-  display: block;            /* 避免 inline 元素多余空隙 */
+  width: 160px;                       /* 头像宽度 */
+  height: 220px;                      /* 头像高度，纵向矩形 */
+  border-radius: 8px;                 /* 轻微圆角，让矩形不生硬 */
+  object-fit: cover;                  /* 填充容器，保持图片比例不变 */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* 添加轻微阴影，使头像更立体 */
+  margin-bottom: 1rem;                /* 底部间距，分隔头像和链接 */
+  display: block;                      /* 避免图片作为 inline 元素出现空隙 */
 }
 
 .intro-left a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #3498db;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s ease;
+  display: inline-block;             /* 让链接支持 padding/margin */
+  margin-top: 0.5rem;                /* 链接与上方元素间距 */
+  color: #3498db;                    /* 蓝色字体，呼应主题色 */
+  text-decoration: none;             /* 去掉默认下划线 */
+  font-weight: 600;                   /* 稍微加粗，让链接更醒目 */
+  transition: color 0.2s ease;       /* 悬停时平滑过渡颜色 */
 }
 
 .intro-left a:hover {
-  color: #1d6fa5;
-  text-decoration: underline;
+  color: #1d6fa5;                    /* 悬停时颜色加深 */
+  text-decoration: underline;         /* 悬停时显示下划线增加交互感 */
 }
 
-/* 右栏：文字部分 */
+/* =========================
+   右栏：文字部分
+   ========================= */
 .intro-right {
-  flex: 1;
-  line-height: 1.6;           /* 行距更舒适 */
-  font-size: 1rem;            /* 稍微大点字体 */
-  color: #333;
+  flex: 1;                            /* 右栏占据剩余空间，自适应宽度 */
+  line-height: 1.6;                   /* 行距更舒适，便于阅读 */
+  font-size: 1rem;                     /* 正文字体稍微大一点 */
+  color: #333;                         /* 文字颜色，确保对比度和可读性 */
 }
+
 
 /* 主体内容 */
 main {
@@ -192,6 +199,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
