@@ -33,7 +33,25 @@
   </div>
 
   </main>
+
+    <!-- 内联 JavaScript 放在这里 -->
+  <script>
+    document.querySelectorAll('.toggle-abstract').forEach(button => {
+      button.addEventListener('click', () => {
+        const abstractDiv = button.parentElement.nextElementSibling;
+        if (abstractDiv.style.display === 'block') {
+          abstractDiv.style.display = 'none';
+          button.textContent = 'Show Abstract';
+        } else {
+          abstractDiv.style.display = 'block';
+          button.textContent = 'Hide Abstract';
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
+
 
 
