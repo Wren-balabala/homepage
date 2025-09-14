@@ -105,29 +105,25 @@ footer {
   padding-bottom: 1rem;
 }
 
-/* 论文标题、作者、期刊信息所在行 */
+/* 摘要折叠 */
 .paper-header {
-  display: flex;              /* 水平排列标题和按钮 */
-  flex-wrap: wrap;            /* 小屏幕自动换行 */
-  align-items: center;        /* 垂直居中 */
-  gap: 0.5rem;                /* 元素间间距 */
+  display: flex;              
+  flex-wrap: wrap;            
+  align-items: center;        
+  gap: 0.5rem;                
 }
 
 /* 展开/收起按钮样式 */
 .paper-header button {
-  margin-left: auto;          /* 按钮靠右 */
-  padding: 0.25rem 0.5rem;   /* 内边距 */
-  cursor: pointer;            /* 鼠标悬停显示手型 */
+  margin-left: 0;            /* 按钮靠左 */
+  padding: 0.25rem 0.5rem;   
+  cursor: pointer;            
+  border: none;              /* 去掉边框 */
+  background: none;          /* 去掉背景 */
+  font-style: italic;        /* 斜体文字 */
+  font-size: 0.9rem;         /* 可选：调整字体大小 */
 }
 
-/* 摘要内容默认隐藏 */
-.paper-abstract {
-  display: none;              /* 默认折叠 */
-  margin-top: 0.5rem;         /* 与标题行间距 */
-  background: #f9f9f9;        /* 浅灰背景 */
-  padding: 0.5rem;            /* 内边距 */
-  border-radius: 4px;         /* 圆角 */
-}
 
 /* 响应式优化：小屏幕下改为上下布局 */
 @media (max-width: 768px) {
@@ -135,6 +131,7 @@ footer {
     margin-bottom: 1rem;
   }
 }
+
 
 
 
