@@ -56,7 +56,7 @@ nav a:hover {
 .avatar {
   width: 150px;
   height: 150px;
-  border-radius: 50%;  /* 圆形头像 */
+  border-radius: 60%;  /* 圆形头像 */
   object-fit: cover;
   margin-bottom: 0.5rem;
 }
@@ -118,3 +118,4 @@ footer {
     margin-top: 0.5rem;
   }
 }
+
