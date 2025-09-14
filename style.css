@@ -54,11 +54,9 @@ nav a:hover {
 }
 
 .avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;  /* 圆形头像 */
-  object-fit: cover;
-  margin-bottom: 0.5rem;
+  width: 150px;       /* 可调整大小 */
+  height: auto;       /* 保持原始纵横比 */
+  border-radius: 0;   /* 保持矩形 */
 }
 
 .intro-left a {
@@ -118,5 +116,6 @@ footer {
     margin-top: 0.5rem;
   }
 }
+
 
 
