@@ -109,18 +109,24 @@ footer {
 /* 每篇论文容器 */
 .paper {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.2rem; /* 图文间距稍微缩小 */
   align-items: flex-start;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background: #fafafa;                /* 卡片背景 */
-  border-radius: 12px;                /* 圆角 */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 阴影 */
-  border: 1px solid #eee;             /* 浅边框，更学术感 */
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+}
+
+/* 图片区域，缩小宽度 */
+.paper-image {
+  flex: 0 0 160px;   /* 固定宽度 160px，可以改成 140-180 之间试试 */
 }
 
 .paper-image img {
   width: 100%;
+  height: auto;      /* 保持比例 */
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
@@ -179,6 +185,7 @@ footer {
     margin-top: 1rem;
   }
 }
+
 
 
 
