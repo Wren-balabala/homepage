@@ -108,12 +108,15 @@ footer {
 
 /* 每篇论文容器 */
 .paper {
-  display: flex;          /* 添加弹性布局 */
-  gap: 20px;              /* 图片与文字间距 */
-  align-items: flex-start; /* 顶部对齐 */
-  margin-bottom: 1.5rem;  
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #fafafa;                /* 卡片背景 */
+  border-radius: 12px;                /* 圆角 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 阴影 */
+  border: 1px solid #eee;             /* 浅边框，更学术感 */
 }
 
 .paper-image img {
@@ -175,4 +178,5 @@ footer {
     margin-top: 1rem;
   }
 }
+
 
