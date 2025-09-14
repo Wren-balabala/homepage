@@ -121,7 +121,7 @@ footer {
 
 /* 图片区域，缩小宽度 */
 .paper-image {
-  flex: 0 0 140px;   /* 固定宽度 160px，可以改成 140-180 之间试试 */
+  flex: 0 0 100px;   /* 固定宽度 160px，可以改成 140-180 之间试试 */
 }
 
 .paper-image img {
@@ -185,6 +185,7 @@ footer {
     margin-top: 1rem;
   }
 }
+
 
 
 
