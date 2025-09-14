@@ -124,6 +124,19 @@ footer {
   font-size: 0.9rem;         /* 可选：调整字体大小 */
 }
 
+/* 摘要内容默认隐藏，字体较小 */
+.paper-abstract {
+  display: none;              /* 默认折叠 */
+  margin-top: 0.5rem;         /* 与标题行间距 */
+  background: #f9f9f9;        /* 浅灰背景 */
+  padding: 0.5rem;            
+  border-radius: 4px;         
+  max-height: 400px;          /* 可选：限制高度 */
+  overflow-y: auto;           /* 超出显示滚动条 */
+  font-size: 0.85rem;         /* 调整字体大小为较小 */
+  line-height: 1.4;           /* 行距稍微紧凑 */
+}
+
 
 /* 响应式优化：小屏幕下改为上下布局 */
 @media (max-width: 768px) {
@@ -131,6 +144,7 @@ footer {
     margin-bottom: 1rem;
   }
 }
+
 
 
 
