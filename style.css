@@ -26,17 +26,21 @@ nav ul {
   gap: 1rem;
 }
 
-nav a {
-  color: #ffffff; /* 白色文字 */
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+.avatar-container {
+  display: inline-block; /* 使容器大小由内容决定 */
+  padding: 6px; /* 这个间距是渐变边框的宽度 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* 渐变背景作为边框 */
+  border-radius: 12px;
+  margin-bottom: 2rem;
 }
 
-nav a:hover {
-  background: #333333; /* 深灰色悬停背景 */
-  color: #ffffff;
+.avatar {
+  width: 220px;
+  height: 300px;
+  border-radius: 8px; /* 内部图片的圆角稍小于容器 */
+  object-fit: cover;
+  display: block;
+  margin: 0; /* 容器已经负责了外边距 */
 }
 
 /* =========================
@@ -207,6 +211,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
