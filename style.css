@@ -26,23 +26,14 @@ nav ul {
   gap: 1rem;
 }
 
-.avatar-container {
-  display: inline-block;
-  padding: 4px; /* 细边框 */
-  background-color: #f8f9fa; /* 浅灰色背景，非常低调 */
-  border: 1px solid #e9ecef; /* 细边框 */
-  border-radius: 10px; /* 稍微圆角 */
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 非常 subtle 的阴影 */
-}
-
 .avatar {
-  width: 220px;
-  height: 300px;
-  border-radius: 6px; /* 内部图片圆角稍小 */
+  width: 200px;                       /* 从 160px 放大到 200px */
+  height: 275px;                      /* 从 220px 放大到 275px，保持比例 */
+  border-radius: 8px;
   object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* 稍微加强阴影 */
+  margin-bottom: 1.5rem;              /* 增加底部间距 */
   display: block;
-  margin: 0;
 }
 
 /* =========================
@@ -213,6 +204,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
