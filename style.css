@@ -128,18 +128,18 @@ footer {
   flex-wrap: nowrap;  /* 禁止换行，确保左右排列 */
 }
 
-/* 图片区域 */
-.paper-image {
-  flex: 0 0 140px;   /* 从 160px 调整到 140px */
-  max-width: 140px;
+/* 摘要内全宽图片样式 */
+.paper-image-fullwidth {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
 }
 
-.paper-image img {
-  width: 100%;
+.paper-image-fullwidth img {
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  display: block;
 }
 
 /* 文字区域 */
@@ -198,6 +198,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
