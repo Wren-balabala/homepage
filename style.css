@@ -61,13 +61,20 @@ nav a:hover {
 }
 
 .avatar {
-  width: 200px;                       /* 从 160px 放大到 200px */
-  height: 275px;                      /* 从 220px 放大到 275px，保持比例 */
-  border-radius: 8px;
+  width: 250px; /* 圆形可以更大胆一些 */
+  height: 250px; /* 宽高必须相等 */
+  border-radius: 50%; /* 关键：设置为50%形成圆形 */
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* 稍微加强阴影 */
-  margin-bottom: 1.5rem;              /* 增加底部间距 */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border: 4px solid #f0f0f0; /* 为圆形头像加一个边框通常效果更好 */
   display: block;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .intro-left a {
@@ -200,6 +207,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
