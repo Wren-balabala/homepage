@@ -11,11 +11,13 @@ body {
 
 /* 导航栏 - 黑白风格 */
 nav {
-  background: #000000; /* 黑色导航栏 */
+  background-color: #000000 !important; /* 使用background-color更具体 */
+  background-image: none !important; /* 防止背景图片覆盖 */
   padding: 1rem 2rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  border: none !important; /* 防止边框影响视觉效果 */
 }
 
 nav ul {
@@ -24,6 +26,12 @@ nav ul {
   padding: 0;
   display: flex;
   gap: 1rem;
+}
+
+/* 确保链接颜色也是白色 */
+nav a, nav li, nav ul {
+  color: #ffffff !important;
+  text-decoration: none;
 }
 
 .avatar {
@@ -204,6 +212,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
