@@ -11,7 +11,7 @@ body {
 
 /* 导航栏 - 黑白风格 */
 nav {
-  background-color: #000000 !important; /* 使用background-color更具体 */
+  background-color: #ffffff !important; /* 使用background-color更具体 */
   background-image: none !important; /* 防止背景图片覆盖 */
   padding: 1rem 2rem;
   display: flex;
@@ -212,26 +212,3 @@ footer {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
