@@ -13,7 +13,7 @@ body {
 nav {
   background-color: #ffffff !important; /* 使用background-color更具体 */
   background-image: none !important; /* 防止背景图片覆盖 */
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -212,3 +212,4 @@ footer {
     width: 100%;
   }
 }
+
