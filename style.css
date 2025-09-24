@@ -1,19 +1,20 @@
-/* 页面基础样式 */
+
+/* 页面基础样式 - 黑白风格 */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
+  background: #ffffff; /* 白色背景 */
+  color: #000000; /* 黑色文字 */
   line-height: 1.6;
 }
 
-/* 导航栏 */
+/* 导航栏 - 黑白风格 */
 nav {
-  background: #3498db; /* 淡蓝色主题 */
+  background: #000000; /* 黑色导航栏 */
   padding: 1rem 2rem;
   display: flex;
-  justify-content: flex-end; /* 导航整体靠右 */
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -26,15 +27,16 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #ffffff; /* 白色文字 */
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #333333; /* 深灰色悬停背景 */
+  color: #ffffff;
 }
 
 /* =========================
@@ -198,6 +200,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
