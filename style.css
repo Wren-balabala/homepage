@@ -61,13 +61,13 @@ nav a:hover {
 }
 
 .avatar {
-  width: 160px;                       /* 头像宽度 */
-  height: 220px;                      /* 头像高度，纵向矩形 */
-  border-radius: 8px;                 /* 轻微圆角，让矩形不生硬 */
-  object-fit: cover;                  /* 填充容器，保持图片比例不变 */
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* 添加轻微阴影，使头像更立体 */
-  margin-bottom: 1rem;                /* 底部间距，分隔头像和链接 */
-  display: block;                      /* 避免图片作为 inline 元素出现空隙 */
+  width: 200px;                       /* 从 160px 放大到 200px */
+  height: 275px;                      /* 从 220px 放大到 275px，保持比例 */
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* 稍微加强阴影 */
+  margin-bottom: 1.5rem;              /* 增加底部间距 */
+  display: block;
 }
 
 .intro-left a {
@@ -200,6 +200,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
